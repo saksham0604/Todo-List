@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  background-image:url(WhatsApp\ Image\ 2025-08-05\ at\ 1.jpg);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 400px;
+  background: #dfed5d;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #090909cb;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaf6ff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #6cee77;
+}
+
+.task button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: darkred;
+}
